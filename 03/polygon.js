@@ -12,3 +12,5 @@ if(width==height){
 else{
     alert("perimeter of rectangle: " + (2* (h+w)));
 }
+
+// prompt always input a string  so (+) using for concating not addition!!!!
