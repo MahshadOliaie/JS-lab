@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>starbucks</title>
+    <script src="./main.js" defer></script>
+</head>
+
+<body>
+    <div class="about">
+        <div id="imageShow"><img src="./images/pngegg-4.png" alt="" id="image"></div>
+        <div id="text">Pink Coconut Starbucks Refresha® Drink</div>
+    </div>
+
+    <div class="imageSelect">
+        <img src="./images/pngegg-4.png" alt="" id="one" class="select"
+            onclick="changeImage('./images/pngegg-4.png' , 'rgba(255, 205, 213, 0.621)' , 'Pink Coconut Starbucks Refresha® Drink' , 'one' ,'rgb(0, 86, 0)')">
+        <img src="./images/pngegg-5.png" alt="" id="two" class="select"
+            onclick="changeImage('./images/pngegg-5.png' , 'rgba(187, 52, 72, 0.725)' , 'Strawberries & Cream Frappuccino® Blended Beverage' , 'two' , 'white')">
+        <img src="./images/pngegg-6.png" alt="" id="three" class="select"
+            onclick="changeImage('./images/pngegg-6.png' , 'lightblue' , 'Dragonfruit & Cream Frappuccino® Blended Beverage' , 'three' , 'rgb(152, 37, 121)')">
+        <img src="./images/pngegg-7.png" alt="" id="four" class="select"
+            onclick="changeImage('./images/pngegg-7.png' , 'rgba(175, 239, 175, 0.749)' , 'Matcha Green Tea Cream Frappuccino® Blended Beverage' , 'four' , 'rgb(0, 86, 0)')">
+    </div>
+</body>
+
+<style>
+    body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 50px 100px;
+        background-color: rgba(255, 205, 213, 0.621);
+    }
+
+    #text {
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 900;
+        font-size: 2rem;
+        width: 400px;
+        color: rgb(0, 86, 0);
+    }
+
+    img {
+        width: 100%;
+    }
+
+    .about,
+    .imageSelect {
+        display: flex;
+        align-items: center;
+        width: 100%;
+    }
+
+    .about {
+        height: 50vh;
+        justify-content: center;
+    }
+
+    #imageShow {
+        width: 240px;
+        height: 100%;
+        margin-right: 50px;
+
+    }
+
+    .imageSelect {
+        width: 50%;
+        margin-top: 150px;
+        justify-content: space-around;
+    }
+
+    .imageSelect>img {
+        width: 80px;
+        height: 150px;
+    }
+
+    #one {
+        transform: scale(1.35);
+        translate: 0 -20px;
+    }
+</style>
+
+</html>
