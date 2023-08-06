@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>random wallaper</title>
+    <script src="./main.js" defer></script>
+</head>
+
+<body>
+    <div id="change" onclick="randomWallpaper()">change wallpaper</div>
+</body>
+
+
+<style>
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-image: url(./images/1.jpg);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
+
+    #change {
+        width: 300px;
+        height: 100px;
+        background: rgba(0, 0, 0, 0.362);
+        backdrop-filter: blur(3px);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 2rem;
+        color: rgba(190, 190, 190, 0.791);
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        box-shadow: 1px 1px 1rem black;
+
+    }
+    #change:hover{
+        transform: scale(1.02);
+    }
+</style>
+
+</html>
