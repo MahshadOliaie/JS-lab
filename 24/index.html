@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>useCapture in eventHandler</title>
+    <script src="./main.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="box">
+            <div class="innerbox">
+                <div class="btn">
+                    <button class="button">click me</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+
+<style>
+    body , div , button{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+    }
+    div{
+        border: 2px solid black;
+    }
+    .container{
+        width: 500px;
+        height: 500px;
+    }
+    .box{
+        width: 350px;
+        height: 350px;
+    }
+    .innerbox{
+        width: 200px;
+        height: 200px;
+    }
+    .btn{
+        width: 100px;
+        height: 100px;
+    }
+    .button{
+        width: 80px;
+        height: 50px;
+        font-size: 1rem;
+    }
+</style>
+
+</html>
