@@ -36,8 +36,8 @@ function buttonColor() {
 
 
 
-button.addEventListener("click", buttonColor, false);
-btn.addEventListener("click", btnColor, false);
-innerbox.addEventListener("click", innerboxColor, false);
-box.addEventListener("click", boxColor, false);
-container.addEventListener("click", containerColor, false);
+button.addEventListener("click", buttonColor, true);
+btn.addEventListener("click", btnColor, true);
+innerbox.addEventListener("click", innerboxColor, true);
+box.addEventListener("click", boxColor, true);
+container.addEventListener("click", containerColor, true);
