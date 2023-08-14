@@ -6,26 +6,24 @@ let header = document.querySelector(".header");
 
 
 let positionY = 0;
-function stickyHeader(){
+function stickyHeader() {
     let scroll = window.scrollY;
-    console.log(scroll)
 
-    if(scroll<positionY){
-        header.style.position = "sticky";
-        header.style.top = "0";
+    if (scroll < positionY) {
+        header.classList.add("scroll")
 
-        
-        
-    }else{
-        header.style.position = "relative";
-       
+
+
+    } else {
+        header.classList.remove("scroll")
+
     }
 
-    positionY=scroll;
+    positionY = scroll;
 }
 
 
 
 
 
-window.addEventListener("scroll",stickyHeader);
+window.addEventListener("scroll", stickyHeader);
