@@ -8,7 +8,7 @@ const PRODUCTS = [
         price: "13800000",
         toman: function () {
             let arr = [];
-            let first ="";
+            let first = "";
             let str = "";
             for (let j = 0; j < this.price.length; j++) {
                 if (j < this.price.length % 3) {
@@ -19,13 +19,15 @@ const PRODUCTS = [
                         str = "";
                     }
                     str += this.price[j];
-                    
+
 
                 }
             }
+
             arr.push(str);
+
             arr.unshift(first);
-            return " تومان"+arr.join(",");
+            return " تومان" + arr.join(",");
         }
 
     },
@@ -36,7 +38,7 @@ const PRODUCTS = [
         price: "38900000",
         toman: function () {
             let arr = [];
-            let first ="";
+            let first = "";
             let str = "";
             for (let j = 0; j < this.price.length; j++) {
                 if (j < this.price.length % 3) {
@@ -47,13 +49,13 @@ const PRODUCTS = [
                         str = "";
                     }
                     str += this.price[j];
-                    
+
 
                 }
             }
             arr.push(str);
             arr.unshift(first);
-            return " تومان"+arr.join(",");
+            return " تومان" + arr.join(",");
         }
 
     },
@@ -64,7 +66,7 @@ const PRODUCTS = [
         price: "47990000",
         toman: function () {
             let arr = [];
-            let first ="";
+            let first = "";
             let str = "";
             for (let j = 0; j < this.price.length; j++) {
                 if (j < this.price.length % 3) {
@@ -75,13 +77,13 @@ const PRODUCTS = [
                         str = "";
                     }
                     str += this.price[j];
-                    
+
 
                 }
             }
             arr.push(str);
             arr.unshift(first);
-            return " تومان"+arr.join(",");
+            return " تومان" + arr.join(",");
         }
 
     },
@@ -92,7 +94,7 @@ const PRODUCTS = [
         price: "74900000",
         toman: function () {
             let arr = [];
-            let first ="";
+            let first = "";
             let str = "";
             for (let j = 0; j < this.price.length; j++) {
                 if (j < this.price.length % 3) {
@@ -103,13 +105,13 @@ const PRODUCTS = [
                         str = "";
                     }
                     str += this.price[j];
-                    
+
 
                 }
             }
             arr.push(str);
             arr.unshift(first);
-            return " تومان"+arr.join(",");
+            return " تومان" + arr.join(",");
         }
 
     },
@@ -120,7 +122,7 @@ const PRODUCTS = [
         price: "10350000",
         toman: function () {
             let arr = [];
-            let first ="";
+            let first = "";
             let str = "";
             for (let j = 0; j < this.price.length; j++) {
                 if (j < this.price.length % 3) {
@@ -131,13 +133,13 @@ const PRODUCTS = [
                         str = "";
                     }
                     str += this.price[j];
-                    
+
 
                 }
             }
             arr.push(str);
             arr.unshift(first);
-            return " تومان"+arr.join(",");
+            return " تومان" + arr.join(",");
         }
 
     },
@@ -148,7 +150,7 @@ const PRODUCTS = [
         price: "177000000",
         toman: function () {
             let arr = [];
-            let first ="";
+            let first = "";
             let str = "";
             for (let j = 0; j < this.price.length; j++) {
                 if (j < this.price.length % 3) {
@@ -159,13 +161,13 @@ const PRODUCTS = [
                         str = "";
                     }
                     str += this.price[j];
-                    
+
 
                 }
             }
             arr.push(str);
             arr.unshift(first);
-            return " تومان"+arr.join(",");
+            return " تومان" + arr.join(",");
         }
 
     },
@@ -176,7 +178,7 @@ const PRODUCTS = [
         price: "99900000",
         toman: function () {
             let arr = [];
-            let first ="";
+            let first = "";
             let str = "";
             for (let j = 0; j < this.price.length; j++) {
                 if (j < this.price.length % 3) {
@@ -187,13 +189,13 @@ const PRODUCTS = [
                         str = "";
                     }
                     str += this.price[j];
-                    
+
 
                 }
             }
             arr.push(str);
             arr.unshift(first);
-            return " تومان"+arr.join(",");
+            return " تومان" + arr.join(",");
         }
     },
     {
@@ -203,7 +205,7 @@ const PRODUCTS = [
         price: "3200000",
         toman: function () {
             let arr = [];
-            let first ="";
+            let first = "";
             let str = "";
             for (let j = 0; j < this.price.length; j++) {
                 if (j < this.price.length % 3) {
@@ -214,13 +216,13 @@ const PRODUCTS = [
                         str = "";
                     }
                     str += this.price[j];
-                    
+
 
                 }
             }
             arr.push(str);
             arr.unshift(first);
-            return " تومان"+arr.join(",");
+            return " تومان" + arr.join(",");
         }
 
     }
@@ -239,3 +241,6 @@ for (let i = 0; i < cards.length; i++) {
     rate[i].textContent = PRODUCTS[i].rate;
     price[i].textContent = PRODUCTS[i].toman();
 }
+
+
+console.log(document.querySelector(".test").nextSibling)
