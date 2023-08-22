@@ -242,5 +242,3 @@ for (let i = 0; i < cards.length; i++) {
     price[i].textContent = PRODUCTS[i].toman();
 }
 
-
-console.log(document.querySelector(".test").nextSibling)
