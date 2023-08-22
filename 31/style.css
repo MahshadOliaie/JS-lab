@@ -1,0 +1,74 @@
+body {
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(45deg, rgba(0, 128, 0, 0.649), rgba(128, 0, 128, 0.551));
+}
+
+.arrows {
+    display: flex;
+    font-size: 100px;
+    background-color: rgba(0, 0, 0, 0.566);
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.leftright {
+    width: 295px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.updown {
+    height: 330px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+}
+
+.uphover,
+.downhover,
+.lefthover,
+.righthover {
+    color: rgba(166, 0, 203, 0.833);
+    transform: scale(1.1);
+    transition: 300ms;
+}
+
+.fa-solid {
+    transition: 300ms;
+}
+
+.uphover {
+    translate: 0px -3px;
+}
+
+.downhover {
+    translate: 0px 3px;
+}
+
+.righthover {
+    translate: 3px;
+}
+
+.lefthover {
+    translate: -3px;
+}
+
+.none{
+    color: white;
+    transform: none;
+    transition: 300ms;
+    translate: 0;
+}
