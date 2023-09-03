@@ -34,4 +34,16 @@ for (let i = 1; i < countries.length; i++) {
 
 
 
+function solution(string) {
+    for(let i=0; i<string.length ; i++){
+       
+      if(string[i]==string[i].toUpperCase()){
+        string[i] =` ${string[i]}`
+
+      }
+    }
+  console.log(string)
+}
+
+solution("camelCasingTest")
 

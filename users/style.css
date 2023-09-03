@@ -1,0 +1,86 @@
+*{
+    box-sizing: border-box;
+}
+
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 70px 0;
+    font-family: yekan;
+}
+
+@font-face {
+    font-family: yekan;
+    src: url(yekan.woff);
+}
+
+.container{
+    width: 80%;
+    gap: 3rem;
+    display: grid;
+    grid-template-columns: repeat(4 , 22%);
+    justify-content: space-between;
+}
+
+
+.card , .moreAbout{
+    background-color: rgb(195, 195, 195);
+    border-radius: 50px;
+    box-shadow: .5px .5px .3rem;
+    position: relative;
+    transition: 300ms;
+}
+
+.card:hover{
+    background-color: rgb(185, 185, 185);
+}
+
+.avatar{
+    padding: 20px;
+}
+
+img{
+    width: 100%;
+}
+
+.text{
+    text-align: center;
+}
+.text h2{
+    margin-bottom: 10px;
+}
+
+
+.moreAbout{
+    padding: 20px;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    overflow-y: scroll;
+    line-height: 1.5;
+    transform: scaleX(-1);
+    display: none;
+}
+
+.moreAbout p{
+    font-weight: 700;
+}
+.moreAbout span{
+    font-weight: 500;
+}
+
+.moreAbout h2{
+    font-size: 18px;
+}
+
+
+.show{
+    display: block;
+}
+
+.flip{
+    transform: scaleX(-1);
+    transition: 300ms;
+}
