@@ -8,13 +8,13 @@ const pupils = document.querySelectorAll(".pupil");
 
 
 function move(event) {
-    let x = (event.clientX / 15);
+    let x = (event.clientX / (window.innerWidth/110));
     let y = (event.clientY / 7);
     let fX = (event.clientX / 20);
     let fY = (event.clientY / 20);
 
+
     face.style.transform = `translate(${fX}px,${fY}px)`;
-    debugger;
 
     document.body.style.backgroundColor = `rgba(${y},${x},${fY},50%)`;
 
