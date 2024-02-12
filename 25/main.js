@@ -6,9 +6,8 @@ const pupils = document.querySelectorAll(".pupil");
 
 
 
-
-function move(event) {
-    let x = (event.clientX / (window.innerWidth/110));
+const move = (event) => {
+    let x = (event.clientX / (window.innerWidth / 110));
     let y = (event.clientY / 7);
     let fX = (event.clientX / 20);
     let fY = (event.clientY / 20);
@@ -24,8 +23,6 @@ function move(event) {
     }
 
 }
-
-
 
 
 
