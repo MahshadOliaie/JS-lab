@@ -9,8 +9,8 @@ let downbtn = document.querySelector("#down");
 let all = document.querySelectorAll(".fa-solid");
 
 
-let index1 = 1;
-let index2 = 1;
+let rowIndex = 1;
+let columnIndex = 1;
 
 
 function changeBand(index) {
@@ -27,13 +27,13 @@ function next() {
 
     previousbtn.classList.remove("disabled");
 
-    index1++;
+    rowIndex++;
 
-    if (index1 <= cases.length) {
-        changeCase(index1);
+    if (rowIndex <= cases.length) {
+        changeCase(rowIndex);
     }
 
-    if (index1 == cases.length)
+    if (rowIndex == cases.length)
         nextbtn.classList.add("disabled");
 
 }
@@ -41,13 +41,13 @@ function next() {
 function previous() {
     nextbtn.classList.remove("disabled");
 
-    index1--;
+    rowIndex--;
 
-    if (index1 >= 1) {
-        changeCase(index1);
+    if (rowIndex >= 1) {
+        changeCase(rowIndex);
     }
 
-    if (index1 == 1)
+    if (rowIndex == 1)
         previousbtn.classList.add("disabled");
 
 }
@@ -56,13 +56,13 @@ function previous() {
 function down() {
     upbtn.classList.remove("disabled");
 
-    index2++;
+    columnIndex++;
 
-    if (index2 <= bands.length) {
-        changeBand(index2);
+    if (columnIndex <= bands.length) {
+        changeBand(columnIndex);
     }
 
-    if (index2 == bands.length)
+    if (columnIndex == bands.length)
         downbtn.classList.add("disabled");
 
 
@@ -71,13 +71,13 @@ function down() {
 function up() {
     downbtn.classList.remove("disabled");
 
-    index2--;
+    columnIndex--;
 
-    if (index2 >= 1) {
-        changeBand(index2);
+    if (columnIndex >= 1) {
+        changeBand(columnIndex);
     }
 
-    if (index2 == 1)
+    if (columnIndex == 1)
         upbtn.classList.add("disabled");
 
 }
